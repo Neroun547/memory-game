@@ -1,18 +1,21 @@
-const { port } = require('./config.json');
+const { port, mongoUri } = require('./config.json');
 const middleware = require('./middleware/middleware');
 const mongoose = require('mongoose');
 const express = require('express');
 const app = express();
 
-mongoose.connect('mongodb+srv://Gosha:lzk56gk5@cluster0.hxqey.mongodb.net/sign?retryWrites=true&w=majority', 
+mongoose.connect(mongoUri, 
 {
-    useNewUrlParser: true, 
-    useUnifiedTopology: true 
+    useNewUrlParser: true,
+	useUnifiedTopology: true,
+	useFindAndModify: false,
+	useCreateIndex: true
 })
 .then(() => {
     console.log('Connect to DB');
 })
-.catch(() => {
+.catch((e) => {
+    console.log(e);
     process.exit(1);
 });
 
