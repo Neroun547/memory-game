@@ -1,0 +1,31 @@
+.sign-form{
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    width: 100%;
+}
+
+.sign-form input {
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.sign-form button {
+    margin: 20px auto;
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.alert-signup{
+    text-align: center;
+    font-size: 22px;
+}

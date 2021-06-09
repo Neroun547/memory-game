@@ -1,0 +1,27 @@
+.wrapper-user-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    width: 100%;
+    margin: 100px auto;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.wrapper-user-info div {
+    margin: 20px;
+}
+
+.wrapper-user-info button {
+    width: 300px;
+    height: 50px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.text-info {
+    text-align: center;
+    font-size: 35px;
+}
